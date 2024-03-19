@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-red: rgba(255, 0, 0, 0.945);
+    --color-yellow: rgb(194, 165, 0);
+    --color-grey: rgba(235, 229, 229, 1);
+    --color-blue: rgb(0, 0, 107);
+    --color-darkgrey: rgb(167, 167, 167);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--color-black);
+    
+}
+
+main {
+    height: 100vh;
+    height: auto;
+    width: 100%;
+    padding: 5rem 5% 5rem;  
+}
+.mainSite {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 70vh;
+}
+
+
+.mainSite-naglowek {
+    width: 100%;
+    text-align: left;
+    padding: 0rem 2%;
+}
+
+.mainSite-naglowek h2 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.mainSite-naglowekBorder {
+    border: 1px solid var(--color-blue);
+    width: 24rem;
+    margin-top: 1rem;
+}
+.mainBorder {
+    padding: 0rem 2%;
+    margin-top: 20rem;
+    width: 100%;
+    height: 20rem;
+    border-radius: 5rem;
+    background-color: var(--color-blue);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.card {
+    flex: 1 0 20%;
+    margin: 1rem;
+    height: 50rem;
+    width: 20rem;
+    margin-top: -18rem;
+    border-radius: 5rem;
+    box-shadow: 1px 1px 15px var(--color-darkgrey);
+    background-color: var(--color-grey);
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+
+.card .bxs-heart {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: var(--color-black);
+    font-size: 3rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.card .bxs-heart:hover, .bx.red-heart{
+    color: var(--color-red);
+}
+
+.cardUpper {
+    background-color: var(--color-white);
+    border-radius: 5rem;
+    height: 35rem;
+    position: relative;
+    box-shadow: 1px 5px 5px var(--color-grey);
+}
+.cardBottom {
+    display: flex;
+}
+.cardImage {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardImage img  {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.cardImage img:hover {
+    transform: scale(1.1);
+}
+.cardBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-left: 1rem;
+    width: 100%;
+}
+
+.cardBottomOpis,
+.cardBottomCena {
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+    padding-right: 3rem;
+}
+.cardBottomOpis h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: .5rem;
+}
+.cardBottomOpis p {
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+    font-weight: 400;
+}
+
+.cardBottomCena {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+.cardBottomCena h3 span {
+    text-decoration: line-through;
+    color: var(--color-blue);
+    font-size: 1.2rem;
+}
+
+.cardBottomCena h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--color-blue);
+}
+.cardBottomCena .przecena {
+    color: var(--color-red);
+}
+
+.card .bx-shopping-bag {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    color: var(--color-black);
+    font-size: 3rem;
+    transition: color .1s ease;
+}
+
+.card .bx-shopping-bag:hover {
+    color: var(--color-yellow);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1250px) {
+    .mainBorder {
+        margin-top: 2rem; 
+    }
+
+    .card {
+        flex: 1 0 45%; 
+        margin: 1rem;
+        margin-bottom: 2rem;
+    }
+    .mainSite {
+        height: auto;
+    }
+    main {
+        padding: 10rem 5% 10rem;
+    }
+    .mainBorder {
+        width: 100%;
+        height: auto;
+    }   
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        flex: 1 0 100%; 
+    }
+    .mainSite-naglowekBorder {
+        width: 20rem;
+    }
+    main {
+        padding: 10rem 0% 10rem;
+    }
+    .mainBorder {
+        border-radius: 0rem;
+    }
+    .cardImage img  {
+        height: auto;
+        max-height: 20rem;
+    }
+    .card {
+        width: 100%;
+        height: 40rem;
+    }
+    .cardUpper{
+        height: 25rem;
+    }
+}

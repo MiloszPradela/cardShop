@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- boxicons css-->
+    <link rel="stylesheet" href="kafelki.css"> <!-- internal css -->
+</head>
+<body>
+
+    <main>
+        <div class="mainSite">
+            <div class="mainSite-naglowek">
+                <h2> Powiązane produkty</h2>
+                <div class="mainSite-naglowekBorder"></div>
+            </div>
+
+            <div class="mainBorder">
+
+                <div class="card">
+                    <div class="cardUpper">
+                        <i class='bx bxs-heart' onclick="changeHeartColor(this)"></i>
+                        <div class="cardImage">
+                            <img src="Images/posciel.png" alt="ImageNumberOne">
+                        </div>
+                    </div>
+                    <div class="cardBottom">
+                        <div class="cardBottomOpis">
+                            <h3>Pościel</h3>
+                            <p>Wyjątkowo miękka pościel bawełniana zapewni Ci spokojny sen i komfort każdej nocy.</p>
+                        </div>
+                        <div class="cardBottomCena">
+                            <h3 class="przecena">129,00 zł <span>149,00 zł</span></h3>
+                        </div>
+                        <i class='bx bx-shopping-bag'></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardUpper">
+                            <i class='bx bxs-heart' onclick="changeHeartColor(this)"></i>
+                        <div class="cardImage">
+                            <img src="Images/lampa.png" alt="ImageNumberOne">
+                        </div>
+                    </div>
+                    <div class="cardBottom">
+                        <div class="cardBottomOpis">
+                            <h3>Lampa LED</h3>
+                            <p>Stwórz przytulną atmosferę w swoim domu dzięki eleganckiej lampie ceramicznej LED.</p>
+                        </div>
+                        <div class="cardBottomCena">
+                            <h3>149,00 zł</h3>
+                        </div>
+                        <i class='bx bx-shopping-bag'></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardUpper">
+                            <i class='bx bxs-heart' onclick="changeHeartColor(this)"></i>
+                        <div class="cardImage">
+                            <img src="Images/poduszka.png" alt="ImageNumberOne">
+                        </div>
+                    </div>
+                    <div class="cardBottom">
+                        <div class="cardBottomOpis">
+                            <h3>Poduszka</h3>
+                            <p>Luksusowa poduszka haftowana zapewni Ci nie tylko wygodę, ale także elegancję i styl w Twojej sypialni.</p>
+                        </div>
+                        <div class="cardBottomCena">
+                            <h3>149,00 zł</h3>
+                        </div>
+                        <i class='bx bx-shopping-bag'></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardUpper">
+                            <i class='bx bxs-heart' onclick="changeHeartColor(this)"></i>
+                        <div class="cardImage">
+                            <img src="Images/szlafrok.png" alt="ImageNumberOne">
+                        </div>
+                    </div>
+                    <div class="cardBottom">
+                        <div class="cardBottomOpis">
+                            <h3>Szlafrok</h3>
+                            <p>Wygodny i miękki szlafrok bawełniany to idealny wybór na relaksujący poranek lub wieczór po kąpieli.</p>
+                        </div>
+                        <div class="cardBottomCena">
+                            <h3>149,00 zł</h3>
+                        </div>
+                        <i class='bx bx-shopping-bag'></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+<script>
+    function changeHeartColor(element) {
+        if (!element.classList.contains('red-heart')) {
+            element.classList.add('red-heart');
+        } else {
+            element.classList.remove('red-heart');
+        }
+    }
+    </script>
+</html>
